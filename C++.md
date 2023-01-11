@@ -6,11 +6,11 @@
     
     - Conjunto de passos computacionais
     
-    -Sub-problemas
+    - Sub-problemas
     
 - Programação Orientada a Objetos
     
-    -Classe e Objeto
+    - Classe e Objeto
     
 
 ---

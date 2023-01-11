@@ -6,11 +6,11 @@
     
     - Conjunto de passos computacionais
     
-    - Sub-problemas
+    -Sub-problemas
     
 - Programação Orientada a Objetos
     
-    - Classe e Objeto
+    -Classe e Objeto
     
 
 ---
@@ -71,6 +71,102 @@
     cout << var1;
     ```
     
-- 
+- **Variáveis e Tipos**
+    - Tipos
+        
+        
+        | Tipo | Bits |
+        | --- | --- |
+        | Char | 8  |
+        | int | 32 |
+        | float | 32 |
+        
+        | Tipo | Bits |
+        | --- | --- |
+        | double | 8  |
+        | void | 8 |
+        | bool |  |
+        
+        → Pontos flutuante: permite testar números com precisão
+        
+        → auto: indentificar de forma automática o tipo de variável
+        
+    - Declaração de Variável
+        
+        tipo nome_da_variavel
+        
+    
+    ```cpp
+    int num, value;
+    ```
+    
+    - Inicialização de Variável
+    
+    ```cpp
+    //Por cópia, com operador de atribuição -> forma tradicional
+    int x = 5;
+    
+    //Direta, com parêntes() 
+    int x(5);
+    
+    //Uniforme, com chaves{}
+    int x{5};
+    ```
+    
+    - If e Else
+        
+        ```cpp
+        
+        if (x == 0)
+        condição;
+        else{
+        	condição
+        }
+        ```
+        
+    
+    - Switch e Break
+        
+        ```cpp
+        switch(N){
+        	case 1:
+        		break;
+        	case 2:
+        		break;
+        	default:
+        		cout << "value 3";
+        ```
+        
+    - while e do-while
+        
+        ```cpp
+        while(condição){
+        	ação;
+        }
+        
+        do{
+        	ação
+        }while(condição);
+        ```
+        
+    - for
+        
+        ```cpp
+        for(variável, condição, ação sobre variável)
+        	ação;
+        
+        //for para lista de valores
+        int l[5] = {1, 2, 3, 4}
+        for(int x: l)
+        	cout << x << "\n";
+        ```
+        
+    
+    - Array
+        
+        ```cpp
+        int l[5] = {1, 2, 3, 4}
+        ```
+        
 
 ---

@@ -168,5 +168,83 @@
         int l[5] = {1, 2, 3, 4}
         ```
         
+- ****struct e typedef****
+    
+    Struct → Agrupamento de dados
+    
+    ```cpp
+    //Estrutura padrão
+    struct cadastro{
+    	char nome[50];
+    	int idade;
+    };
+    cadastro c;
+    
+    //Estrutura anônima -> sem nome
+    struct cadastro{
+    	char nome[50];
+    	int idade;
+    } cad1,cad2; //tem que ter variável declarada junto
+    ```
+    
+    ```cpp
+    //Inicicialização
+    
+    // Tradicional
+    cadastro c1 = {"john", 32};
+    
+    // Uniforme
+    cadastro c2 {"john", 32};
+    
+    // Atribuição
+    cadastro cad;
+    cad = {"john", 32};
+    ```
+    
+    - typedef e using → Itnicialização de variável
+    
+    ```cpp
+    Using 
+    
+    typedef int inteiro;
+    using integer = int;
+    ```
+    
+- **Strings**
+    
+    Sequência de caracteres utilizadas para representar palavras ou textos
+    
+    ```cpp
+    // Forma tradicional C
+    char str[tam] = "oi";
+    
+    //Padrão C++
+    string str; //objeto
+    ```
+    
+    ```cpp
+    //  INICIALIZAÇÃO
+    
+    //atribuição
+    string str = "texto"; 
+    
+    //construtor
+    string str("texto");
+    
+    //Atribuir valor a outra string
+    str1 = str2
+    
+    ```
+    
+    ```cpp
+    // PECORRER CÓDIGO
+    
+    //FOR
+    string str = "hello";
+    for (int i = 0; i < str.size(); i++){
+    	cout << str[i] << endl;
+    }
+    ```
+    
 
 ---

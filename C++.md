@@ -214,37 +214,101 @@
     
     Sequência de caracteres utilizadas para representar palavras ou textos
     
-    ```cpp
-    // Forma tradicional C
-    char str[tam] = "oi";
-    
-    //Padrão C++
-    string str; //objeto
-    ```
-    
-    ```cpp
-    //  INICIALIZAÇÃO
-    
-    //atribuição
-    string str = "texto"; 
-    
-    //construtor
-    string str("texto");
-    
-    //Atribuir valor a outra string
-    str1 = str2
-    
-    ```
-    
-    ```cpp
-    // PECORRER CÓDIGO
-    
-    //FOR
-    string str = "hello";
-    for (int i = 0; i < str.size(); i++){
-    	cout << str[i] << endl;
-    }
-    ```
-    
+    - Inicializar
+        
+        ```cpp
+        // Forma tradicional C
+        char str[tam] = "oi";
+        
+        //Padrão C++
+        string str; //objeto
+        ```
+        
+        ```cpp
+        //  INICIALIZAÇÃO
+        
+        //atribuição
+        string str = "texto"; 
+        
+        //construtor
+        string str("texto");
+        
+        //Atribuir valor a outra string
+        str1 = str2
+        
+        ```
+        
+    - Percorrer string
+        
+        ```cpp
+        //FOR
+        string str = "hello";
+        for (int i = 0; i < str.size(); i++){
+        	cout << str[i] << endl;
+        }
+        ```
+        
+    - Escrever na tela
+        
+        ```cpp
+        string str = "hello";
+        cout << str;
+        ```
+        
+    - Lendo a string
+        
+        ```cpp
+        string str;
+        cin >> str;
+        cout << str;
+        
+        //frase
+        string str;
+        getline(cin,str);
+        cout << str;
+        
+        //limpar buffer
+        string str;
+        getline(cin,str);
+        cin.ignore(32767, '\n'); 
+        cout << str;
+        ```
+        
+    - Manipulação de String
+        
+        Métodos internos desenvolvidos para manipulação de caracteres;
+        
+        ```cpp
+        //tamanho
+        string str = "hello";
+        cout << str.length() << endl;
+        cout << str.size() << endl;
+        
+        //copia de string
+        string str, str2 = "hello";
+        str.assign(str2);
+        str = str2;
+        
+        //concatenar
+        string str = "bom";
+        string str2 = "dia";
+        
+        str += " ";
+        str1.append(str2);
+        str.pus_back('!'); //1 caracter
+        
+        //comparar
+        string str = "bom";
+        string str2 = "dia";
+        
+        if(str == str2)
+        	cout << "iguais << endl
+        else
+        	cout << "dif" << endl
+        
+        str.compare(str2) == 0 // iguais
+        
+        ```
+        
 
 ---

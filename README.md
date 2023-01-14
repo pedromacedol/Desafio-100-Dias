@@ -5,3 +5,18 @@ O Desafio consiste em estudar programação durante 100 dias consecutivos. Busca
 
 Sobre o meu desafio:
 https://shining-cilantro-102.notion.site/Desafio-100-Dias-411bffc2e7744a50b93dbf5b0c6e2a30
+
+## 📚 Conteúdos
+**✅ Conceitos de Computação**
+
+→ **Conceitos C++**
+
+**→ Estrutura de Dados**
+
+→ **Programação Orientada a Objetos**
+
+**→ Grafos**
+
+## 📑 Sites para praticar
+
+https://www.beecrowd.com.br/judge/en/login

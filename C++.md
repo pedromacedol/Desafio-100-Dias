@@ -310,5 +310,85 @@
         
         ```
         
+- Ponteiros e referência
+    
+    Funcionam como
+    
+    ```cpp
+    int idade = 21;
+    int *p;
+    p = &idade;
+    cout << *p << endl;
+    cout << p << endl;
+    
+    //NUll 
+    int *p1 = 0;
+    nullptr // valor ponteiro NULL
+    
+    ```
+    
+    - Operador de referência → sempre inicializar
+        
+        Sempre será sinônimo para a 1º variável.
+        
+    
+    ```cpp
+    tipo_referencia &nome_referencia = variável; //sinonimo
+    int idade = 22;
+    int &refe = idade;
+    
+    cout << idade << endl; //22
+    cout << refe << endl; //22
+    ```
+    
+- Funções
+    
+    ```cpp
+    //declarar antes do void
+    int função(vall){
+    	return val;
+    }
+    
+    //proibido função dentro de função
+    ```
+    
+    - tipos de passagem
+    
+    ```cpp
+    //por valor
+    
+    //por referência -> Ponteiro
+    
+    //por referência -> Referência
+    void function(int &n){
+    	n = n+1;
+    }
+    
+    ```
+    
+    - Sobrecarga → criar funções com o mesmo nome e parâmetros diferentes.
+        
+        ```cpp
+        //Utilizar com cuidado, pois pode gerar um casting.
+        
+        void funcao(double a){
+        }
+        
+        void funcao(int a){
+        }
+        
+        void funcao(string a){
+        }
+        ```
+        
+    - Funções em linha → Substitui o código na definição da chamada da função
+    
+    ```cpp
+    void funcao_comun_mensagem()
+    {
+        printf("\nStack OverFlow\nFunção comum.\n\n");
+    }
+    ```
+    
 
 ---

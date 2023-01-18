@@ -341,7 +341,7 @@
     cout << refe << endl; //22
     ```
     
-- Funções
+- **Funções**
     
     ```cpp
     //declarar antes do void
@@ -353,19 +353,19 @@
     ```
     
     - tipos de passagem
-    
-    ```cpp
-    //por valor
-    
-    //por referência -> Ponteiro
-    
-    //por referência -> Referência
-    void function(int &n){
-    	n = n+1;
-    }
-    
-    ```
-    
+        
+        ```cpp
+        //por valor
+        
+        //por referência -> Ponteiro
+        
+        //por referência -> Referência
+        void function(int &n){
+        	n = n+1;
+        }
+        
+        ```
+        
     - Sobrecarga → criar funções com o mesmo nome e parâmetros diferentes.
         
         ```cpp
@@ -382,12 +382,77 @@
         ```
         
     - Funções em linha → Substitui o código na definição da chamada da função
+        
+        ```cpp
+        void funcao_comun_mensagem()
+        {
+            printf("\nStack OverFlow\nFunção comum.\n\n");
+        }
+        ```
+        
+    
+- **Alocação dinâmica**
+    
+    Toda variável será alocada memória, ou seja, saber o tamanho de memória necessário para armazenar a informação.
+    
+    - Alocação de variável → new e delete
+        
+        ```cpp
+        ponteiro = new tipo_dado;
+        delete ponteiro;
+        
+        int *p = new int;
+        *p = 80
+        cout << &p << endl;
+        
+        ```
+        
+    - Alocação de Array → new[ ] e delete [ ]
+        
+        ```cpp
+        ponteiro = new tipo_dados[tamanho];
+        delete[] ponteiro;
+        
+        int *vet = new int[10];
+        cout << vet[0]; << endl;
+        delete[] vet;
+        ```
+        
+    - Arrays multidimensionais (Matrizes)
+        
+        ```cpp
+        //Utilizando a mesma forma do array
+        int matriz[4][5] //Pode ser etendido como 20 posições na memória
+        new int matriz[4][5] // Alocar apenas uma dimensão(FIXA)
+        
+        //Utilizando um array unidimensional
+        for ...
+        
+        //Utilizando ponteiro do ponteiro
+        int* //cria um array
+        int** //array de ponteiros
+        ```
+        
+    
+      
+    
+- **Manipulação de Arquivos**
+    
+    fstream → Arquivo aberto;
+    
+    ofstream → Saída;
+    
+    ifstream → Entrada
     
     ```cpp
-    void funcao_comun_mensagem()
-    {
-        printf("\nStack OverFlow\nFunção comum.\n\n");
-    }
+    //Biblioteca -> fstream
+    objeto.open(nome_arq, modo);
+    
+    //nome_arq: diretório ou caminho relativo
+    //modo: forma de abertura
+    
+    //para fechar:
+    arquivo.close();
     ```
     
 

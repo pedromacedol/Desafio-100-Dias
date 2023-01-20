@@ -9,7 +9,7 @@ https://shining-cilantro-102.notion.site/Desafio-100-Dias-411bffc2e7744a50b93dbf
 ## 📚 Conteúdos
 **✅ Conceitos de Computação**
 
-→ **Conceitos C++**
+**✅ Conceitos C++**
 
 **→ Estrutura de Dados**
 

@@ -448,11 +448,67 @@
     //Biblioteca -> fstream
     objeto.open(nome_arq, modo);
     
+    //bnario
+    arq.open(nome_arq, ios::binary | ios::out);
+    
     //nome_arq: diretório ou caminho relativo
     //modo: forma de abertura
     
     //para fechar:
     arquivo.close();
+    ```
+    
+    - Escrever → ofstream  ( <<, Igual cout)
+        
+        ```cpp
+        //textos
+        arquivo << dados; 
+        arquivo.close();
+        
+        //arquivos binários
+        arquivo.read
+        ```
+        
+    - Ler → ifstream (>>, igual cin)
+        
+        ```cpp
+        //Modo de leitura
+        
+        //textos
+        arquivo >> dados;
+        arquivo.close();
+        
+        //arquivos binários
+        arquivo.read(char *buffer, streamsize N);
+        arquivo.close();
+        ```
+        
+    - Ler todo o arquivo → eof (criar uma flag)
+        
+        ```cpp
+        if(arq.eof()){
+        	break;
+        }
+        ```
+        
+- **Tratamento e exceções**
+    
+    Verificar erros no sistemas e gerar exceções
+    
+    - Try → Código a ser testado;
+    - Catch → Código a ser executado, em caso de erro no try;
+    - Throw → Gera um retorno para uma exceção
+    
+    ```cpp
+    throw expressão;
+    
+    try {
+    	if (y < 0)
+    		throw 42
+    }
+    catch(...){
+    	cout << valor inválido;
+    }
     ```
     
 

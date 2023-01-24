@@ -20,3 +20,5 @@ https://shining-cilantro-102.notion.site/Desafio-100-Dias-411bffc2e7744a50b93dbf
 ## 📑 Sites para praticar
 
 https://www.beecrowd.com.br/judge/en/login
+
+## Materiais úteis
